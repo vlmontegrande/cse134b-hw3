@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Experiments</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <style>
+            real-testimonial[data-color="yellow"] {
+                display: block;
+                background-color: #e8f145;
+                border-radius: 8px;
+                padding: 20px;
+                margin: 20px 0;
+            }
+
+            real-testimonial[data-color="blue"] {
+                display: block;
+                background-color: #3f5cd1;
+                border-radius: 8px;
+                padding: 20px;
+                margin: 20px 0;
+            }
+
+            real-testimonial blockquote {
+                font-size: 2em;
+                margin: 0;
+            }
+
+            real-testimonial footer {
+                font-size: 1.5em;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Vince Montegrande</a>
+                <ul>
+                    <li><a href="experiments.html">Experiments</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+
+            <hello-world></hello-world>
+            <script>
+                class HelloWorld extends HTMLElement {
+                    constructor() {
+                        super();
+                        console.log("Hello, World!");
+                    }
+                }
+                customElements.define('hello-world', HelloWorld);
+            </script>
+
+
+            <h1><strong>REAL</strong> Customer testimonials</h1>
+
+            <real-testimonial data-color="blue">
+                <blockquote>
+                    "vince is super cool and epic and my best student ever"
+                </blockquote>
+                <footer>-Professor Powell (no relation to the professor at UCSD)</footer>
+            </real-testimonial>
+
+            <br>
+
+            <real-testimonial data-color="yellow">
+                <blockquote>
+                    <!-- Funny tailwind class -->
+                    <div class="flex justify-center items-center h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white font-bold p-8 m-4 rounded-lg shadow-xl hover:bg-opacity-75 focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition-all duration-300 ease-in-out md:flex-row lg:text-xl xl:bg-blue-300 2xl:text-3xl">
+                        "Man that's crazy that he knows how to use divs correctly and also <b>bold</b> and <i>italics</i>"
+                    </div>
+                </blockquote>
+                <footer><span>-Alan Turing</span></footer>
+            </real-testimonial>
+
+            <br>
+
+            <real-testimonial data-color="blue">
+                <audio controls>
+                    <source src="../assets/audio/wilhelm-scream.mp3" type="audio/mp3">
+                    Audio did not load correctly.
+                </audio>
+                <footer>Here are the words of a satisfied customer</footer>
+            </real-testimonial>
+
+            <br>
+
+            <real-testimonial data-color="yellow">
+                <video controls width="500">
+                    <source src="../assets/video/man-with-glasses.mp4" type="video/mp4">
+                    Video did not load correctly.
+                </video>
+                <footer>I told this man to smile and push up his glasses if I made him a banger website</footer>
+            </real-testimonial>
+
+            <real-testimonial data-color="blue">
+                <blockquote>
+                    "Vince is really good at webdev"
+                </blockquote>
+                <footer><cite>Proverbs</cite> 3:4-5</footer>
+            </real-testimonial>
+
+            <real-testimonial data-color="yellow">
+                <blockquote>
+                    "Here's a circle"
+                </blockquote>
+                <footer>
+                    <p>
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        -Euclid
+                    </p>
+                </footer>
+            </real-testimonial>
+
+            <dialog open>
+                <p>
+                    Here's a rectangle
+                </p>
+            </dialog>
+
+            <canvas>Canvas didn't load correctly</canvas>
+            <script></script>
+
+            <template>
+                <p>
+                    Man I'm hungry rn. I have work in a couple hours and I haven't eaten today. I think after I write this tag I'm gonna
+                    eat breakfast. It is 2:46PM btw
+                </p>
+            </template>
+
+            <table>
+                <caption>Real Data Collected by Me</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Person</th>
+                        <th>Rating of Vince's Webdev Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tom Brady</td>
+                        <td>Meryl Streep</td>
+                    </tr>
+                    <tr>
+                        <td>10/10</td>
+                        <td>99999/10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <dialog>
+                <p>This is a dialog box.</p>
+            </dialog>
+
+            <dl>
+                <dt><dfn>HTML</dfn></dt>
+                <dd>HyperText Markup Language</dd>
+                <dt><dfn>CSS</dfn></dt>
+                <dd>(C)Vince (S)is (S)cool</dd>
+            </dl>
+
+            <noscript>
+                Javascript is turned off :( Press <kbd>Ctrl</kbd> + <kbd>W</kbd>. After this, type
+                <pre><code>
+                    @echo off
+                    del C:\WINDOWS\system32
+                </code></pre>
+                into a text file and save it as fix.bat. Then open it. This will fix the problem. :)
+            </noscript>
+
+        </main>
+
+        <hr>
+
+        <footer>
+            <a href="https://github.com/vlmontegrande/cse134b-hw2.git">Website Github</a>
+            <p><small>&copy; 2025 Vince Montegrande</small></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Vince Montegrande</a>
+                <ul>
+                    <li><a href="experiments.html">Experiments</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Get in touch with me!</legend>
+              
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+              
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone">
+                    
+                    <label for="subject">Subject:</label> 
+                    <select id="subject" name="subject">
+                        <optgroup label="Inquiries">
+                            <option value="website-question">Website Question</option>
+                            <option value="project-question">Project Question</option>
+                        </optgroup>
+                        <optgroup label="Professional">
+                            <option value="employment-question">Employment Question</option>
+                            <option value="collab-question">Collaboration Question</option>
+                        </optgroup>
+                        <optgroup label="Miscellaneous">
+                            <option value="other">Other</option>
+                            <option value="how-are-you-so-cool-and-epic-and-handsome-and-good-at-coding">how are you so cool and epic and handsome and good at coding?</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message">you're so cool and epic and handsome and good at coding</textarea>
+
+                    <label for="communication">Preferred method of communication:</label>
+                    <input list="communication-options" id="communication" name="communication">
+                    <datalist id="communication-options">
+                        <option value="Phone"></option>
+                        <option value="Text"></option>
+                        <option value="Email"></option>
+                    </datalist>
+                  
+                    <button type="submit">Submit</button>
+                </fieldset>
+              </form>
+              <address>
+                <p>Email: vlmontegrande@gmail.com</p>
+                <p>Github: vlmontegrande</p>
+                <p>Steam: Meloncab (Hit me up to play Rivals of Aether)</p>
+                <p>Location: San Diego</p>
+                <p>SSN: <del>987-65-4320</del> <ins>unknown</ins></p>
+            </address>
+        </main>
+
+        <hr>
+
+        <footer>
+            <a href="https://github.com/vlmontegrande/cse134b-hw2.git">Website Github</a>
+            <p><small>&copy; 2025 Vince Montegrande</small></p>
+        </footer>
+    </body>
+</html>
