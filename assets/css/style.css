@@ -1,1 +1,24 @@
-/* so empty... */
+/* 
+    To demonstrate CSS knowledge use the technology to style your HTML pages from the previous homework (HW2). 
+    You may need to add classes, id, and restructure your elements in order to do this task. That is fine. 
+    However, do not convert your site to a <div> dominant design - this can result in significant point loss.
+
+    To layout your page you MUST use CSS Flexbox and/or CSS Grid (10 pts). 
+    You do not have to account for ancient browsers so assume Edge Chromium, Chrome, latest Safari and latest Firefox level access.
+
+    To style your page use whichever CSS properties you like, but you must show demonstration of these intermediate or advanced ideas:
+
+    CSS Variables, make sure to use fallbacks while using variables (2 pts)
+    Custom Fonts (also with fallback for slow load or failure) (3 pts)
+    Relative units like em, rem, %, etc. (1 pt)
+    Dynamic viewport units dvw, dvh, etc (1 pt)
+    CSS Animations, Transitions and Transforms (3 pts each)
+    Media Queries (See Part 3 - Responsive Web Design)
+    Some of the following might not have the maximum adoption current (most are hovering around 87-88% adoption) but are worth trying out:
+
+    Use wider gamut color with color() and color-mix() (2 pts)
+    New selectors like has() (2 pts)
+    Extra Credit: Use Nested and Scoped CSS (5 pts)
+
+    Any CSS written should be as standard as is possible. 
+*/
