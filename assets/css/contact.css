@@ -20,6 +20,8 @@
     --big-link-size: 1.5rem;
     --small-link-size: 1rem;
     --header-size: 3rem;
+    --header-two-size: 2rem;
+    --header-three-size: 1rem;
     --tablet-header-size: 2.5rem;
     --phone-header-size: 2rem;
 
@@ -120,12 +122,89 @@ footer small {
 main {
     font-family: "Spectral", Arial, Sans-serif;
     flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+form {
+    width: 40%;
+    height: fit-content;
+    background-color: var(--surface-container);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;  
+    color: var(--primary-color, brown);
+}
+
+legend {
+    font-family: "Volkhov", Arial, Sans-serif;
+    font-size: var(--header-size);
+    font-weight: bold;
+}
+
+label {
+    font-family: "Volkhov", Arial, Sans-serif;
+}
+
+input, textarea {
+    font-family: "Spectral", Arial, Sans-serif;
+    margin-bottom: 1rem;
+    border: 1px solid var(--on-primary-container);
+}
+
+input:focus, textarea:focus {
+    outline-color: var(--on-primary-container);
+}
+
+button {
+    align-self: end;
+    width: 8rem;
+    height: 2rem;
+    color: var(--primary-color);
+    background-color: var(--primary-container);
+    font-family: "Volkhov", Arial, Sans-serif;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    font-weight: bold;
+}
+
+address {
+    width: 40%;
+    color: var(--primary-color, brown);
+    padding: 2rem;
+}
+
+address h1 {
+    font-family: "Volkhov", Arial, Sans-serif;
+    font-size: var(--header-size);
+    font-style: normal;
+    font-weight: bold;
 }
 
 /* Tablet/Restrictive Laptop Breakpoint */
 
 @media screen and (min-width: 778px) and (max-width: 1023px) {
-    
+    main {
+        flex-direction: column;
+    }
+
+    form, address {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Phone Breakpoint */
@@ -138,5 +217,21 @@ main {
     nav svg {
         display: block;
         margin-right: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    form, address {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
