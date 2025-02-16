@@ -20,9 +20,20 @@
 
 :root {
     --header-footer-height: 64px;
+    --big-link-size: 1rem;
+    --small-link-size: 0.75rem;
+
+    --background-color: #fff6eb;
+    --on-background-color: #1d1a15;
+    --primary-color: #705d0d;
+    --on-primary-color: #ffffff;
+    --primary-container: #fce186;
+    --on-primary-container: #554500;
+    --surface-container: #f5eddf;
+    --text-color: #201d18;
 }
 
-/* Common between page styles*/
+/* Common between page styles */
 
 * {
     margin: 0;
@@ -34,12 +45,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--md-sys-color-background, white);
+    background-color: var(--background-color, white);
 }
   
 nav {
     display: flex;
-    height: var(--header-footer-height, 64px);
+    height: var(--header-footer-height);
     justify-content: space-between;
     align-items: center;
     font-family: "Volkhov", Arial, Sans-serif;
@@ -52,16 +63,18 @@ nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-size: 0.75em;
+    font-size: var(--small-link-size);
     overflow: hidden;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--md-sys-color-on-surface-container, black);
+    color: var(--text-color, brown);
 }
 
 #main-link {
+    color: var(--text-color, brown);
+    font-size: var(--big-link-size);
     margin-left: 1rem;
 }
 
@@ -70,7 +83,7 @@ hr {
 }
 
 footer {
-    min-height: var(--header-footer-height, 64px);
+    min-height: var(--header-footer-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,12 +100,15 @@ footer > :last-child {
 }
 
 footer a {
+    font-size: (--big-link-size);
     text-decoration: none;
-    color: var(--md-sys-color-on-surface-container, black);
+    color: var(--text-color, black);
     font-weight: bold;
 }
 
 footer small {
-    font-size: 0.75em;
-    color: var(--md-sys-color-on-surface-container, black);
+    font-size: var(--small-link-size);
+    color: var(--text-color, black);
 }
+
+/* Page styles */
