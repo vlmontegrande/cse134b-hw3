@@ -167,7 +167,7 @@ strong {
 
 /* Tablet/Restrictive Laptop Breakpoint */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 778px) and (max-width: 1023px) {
     #text-block {
         display: block;
         height: 20rem;
@@ -187,7 +187,7 @@ strong {
 
 /* Phone Breakpoint */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 777px) {
     nav ul {
         display: none;
     }
