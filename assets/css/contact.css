@@ -25,6 +25,7 @@
     --tablet-header-size: 2.5rem;
     --phone-header-size: 2rem;
 
+    --nav-link-color: color(srgb 0.36 0.22 0.07);
     --background-color: #fff6eb;
     --on-background-color: #1d1a15;
     --primary-color: #705d0d;
@@ -71,7 +72,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--text-color, brown);
+    color: var(--nav-link-color, brown);
 }
 
 nav svg {
@@ -79,7 +80,7 @@ nav svg {
 }
 
 #main-link {
-    color: var(--text-color, brown);
+    color: var(--nav-link-color, brown);
     font-size: var(--big-link-size);
     margin-left: 1rem;
 }
