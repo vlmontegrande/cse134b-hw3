@@ -51,7 +51,7 @@ body {
   
 nav {
     display: flex;
-    height: var(--header-footer-height);
+    height: var(--header-footer-height, 64px);
     justify-content: space-between;
     align-items: center;
     font-family: "Volkhov", Arial, Sans-serif;
@@ -88,7 +88,7 @@ hr {
 }
 
 footer {
-    min-height: var(--header-footer-height);
+    min-height: var(--header-footer-height, 64px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,14 +105,14 @@ footer > :last-child {
 }
 
 footer a {
-    font-size: (--big-link-size);
+    font-size: (--big-link-size, 1.5rem);
     text-decoration: none;
     color: var(--text-color, black);
     font-weight: bold;
 }
 
 footer small {
-    font-size: var(--small-link-size);
+    font-size: var(--small-link-size, 1rem);
     color: var(--text-color, black);
 }
 
@@ -135,11 +135,11 @@ main header {
 input {
     font-family: "Spectral", Arial, Sans-serif;
     margin-bottom: 1rem;
-    border: 1px solid var(--on-primary-container);
+    border: 1px solid var(--on-primary-container, brown);
 }
 
 input:focus {
-    outline-color: var(--on-primary-container);
+    outline-color: var(--on-primary-container, brown);
 }
 
 h1, h2 {
@@ -148,7 +148,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: var(--header-size);
+    font-size: var(--header-size, 3rem);
     grid-column: 2;
 }
 
@@ -171,10 +171,10 @@ search button {
     width: 4rem;
     height: 1.5rem;
     color: var(--primary-color);
-    background-color: var(--primary-container);
+    background-color: var(--primary-container, yellow);
     font-family: "Volkhov", Arial, Sans-serif;
     border-radius: 2rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color, brown);
     font-weight: bold;
 }
 
