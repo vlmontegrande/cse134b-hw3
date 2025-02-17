@@ -123,14 +123,9 @@ main {
     flex: 1;
 }
 
-#landscape-image-container {
-    display: flex;
-    justify-content: center;
-}
-
 img {
     width: 100%;
-    object-fit: cover;
+    object-position: top;
 }
 
 /* Tablet/Restrictive Laptop Breakpoint */
