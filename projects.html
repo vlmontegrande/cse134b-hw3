@@ -27,41 +27,44 @@
         <hr>
 
         <main>
-            <search>
-                <form>
-                    <label for="project">Find a project</label>
-                    <input type="search" id="project" name="project">
-                    <button type="submit">Search</button>
-                </form>
-            </search>
-            <section>
-                <hgroup>
-                    <h1>
-                        CSE134B Homework 1
-                    </h1>
-                    <p>
-                        This was a project to modify a site, host it on Netlify, and play around with it.
-                    </p>
-                </hgroup>
-                <iframe
-                    width="1000"
-                    height="500"
-                    src="https://regal-wisp-91b064.netlify.app/"
-                >
-                </iframe>
+            <header>
+                <h1>Projects</h1>
+                <search>
+                    <form>
+                        <label for="project">Find a project</label>
+                        <span id="search-container">
+                            <input type="search" id="project" name="project">
+                            <button type="submit">Search</button>
+                        </span>
+                    </form>
+                </search>
+            </header>
 
-                <hgroup>
-                    <h1>
-                        Smoothbrain
-                    </h1>
-                    <p>
-                        This is a WIP website built with React and Next.js. It is a Jackbox clone with custom UI and backend.
-                    </p>
-                </hgroup>
-                <picture>
-                    <source srcset="../assets/images/smoothbrain-mobile-screenshot.png" media="(orientation: portrait)" width="300">
-                    <img src="../assets/images/smoothbrain-screenshot.png" alt="A screenshot of the Smoothbrain UI" width="1000">
-                </picture>
+            <section id="projects-container">
+                <section class="project-container">
+                    <hgroup>
+                        <h2>
+                            CSE134B Homework 1
+                        </h2>
+                        <p>
+                            This was a project to modify a site, host it on Netlify, and play around with it.
+                        </p>
+                    </hgroup>
+                    <img src="assets/images/hw1-screenshot.png" alt="Image of website page">
+                    </iframe>
+                </section>
+
+                <section class="project-container">
+                    <hgroup>
+                        <h2>
+                            Smoothbrain
+                        </h2>
+                        <p>
+                            This is a WIP website built with React and Next.js. It is a Jackbox clone with custom UI and backend.
+                        </p>
+                    </hgroup>
+                    <img src="/assets/images/smoothbrain-mobile-screenshot.png" alt="A screenshot of the Smoothbrain UI">
+                </section>
             </section>
         </main>
 
