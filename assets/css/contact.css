@@ -179,6 +179,11 @@ button {
     border-radius: 2rem;
     border: 1px solid var(--primary-color, brown);
     font-weight: bold;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 address {
