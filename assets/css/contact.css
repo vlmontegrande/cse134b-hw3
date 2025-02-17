@@ -166,7 +166,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    outline-color: var(--on-primary-containe, brown);
+    outline-color: var(--on-primary-container, brown);
 }
 
 button {
