@@ -65,22 +65,34 @@ nav ul {
     justify-content: space-between;
     list-style: none;
     font-size: var(--small-link-size);
-    overflow: hidden;
 }
 
 nav a {
+    display: inline-block;
     text-decoration: none;
     color: var(--nav-link-color, brown);
+    transition: transform 0.3s;
 }
+  
+nav a:hover {
+    transform: scale(1.1);
+}
+  
 
 nav svg {
     display: none;
 }
 
 #main-link {
+    text-decoration: none;
     color: var(--nav-link-color, brown);
     font-size: var(--big-link-size);
     margin-left: 1rem;
+    transition: transform 0.3s;
+}
+
+#main-link:hover {
+    transform: scale(1.1);
 }
 
 hr {
@@ -214,6 +226,14 @@ search button:hover {
     object-position: bottom;
     border-radius: 2rem;
     margin-top: 1rem;
+}
+
+.project-container a {
+    transition: transform 0.3s;
+}
+
+.project-container a:hover {
+    transform: scale(1.1);
 }
 
 /* Tablet/Restrictive Laptop Breakpoint */
