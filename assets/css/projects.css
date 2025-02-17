@@ -257,6 +257,7 @@ search button:hover {
     nav svg {
         display: block;
         margin-right: 1rem;
+        fill: var(--nav-link-color, brown);
     }
 
     #projects-container {

@@ -234,6 +234,7 @@ main header h1 {
     nav svg {
         display: block;
         margin-right: 1rem;
+        fill: var(--nav-link-color, brown);
     }
 
     #content {
