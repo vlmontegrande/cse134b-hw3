@@ -208,6 +208,18 @@ address h1 {
     font-weight: bold;
 }
 
+address a {
+    text-decoration: none;
+    color: var(--primary-color, brown);
+    font-weight: bold;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+address a:hover {
+    transform: scale(1.1);
+}
+
 #address-container {
     height: fit-content;
     background-color: var(--primary-container, yellow);
