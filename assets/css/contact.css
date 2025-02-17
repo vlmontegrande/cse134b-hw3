@@ -135,6 +135,12 @@ form {
     border-radius: 2rem;
 }
 
+fieldset:has(input:invalid) button, 
+fieldset:has(textarea:invalid) button {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
