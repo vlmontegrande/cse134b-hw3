@@ -131,11 +131,38 @@ footer small {
 main {
     font-family: "Spectral", Arial, Sans-serif;
     flex: 1;
+    color: var(--primary-color, brown);
+}
+
+h1, h2 {
+    font-family: "Volkhov", Arial, Sans-serif;
+    font-weight: bold;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 img {
     width: 100%;
+    display: block;
     object-position: top;
+}
+
+main header {
+    background-color: var(--background-color);
+}
+
+main header h1 {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px black; 
+    text-align: center;
+    font-size: 5rem;
 }
 
 /* Tablet/Restrictive Laptop Breakpoint */
