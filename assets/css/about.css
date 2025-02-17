@@ -214,6 +214,13 @@ main header h1 {
 /* Tablet/Restrictive Laptop Breakpoint */
 
 @media screen and (min-width: 778px) and (max-width: 1023px) {
+    .content-section h2 {
+        font-size: 1.25rem;
+    }
+    
+    .content-section p {
+        font-size: 0.8rem; 
+    }
     
 }
 
@@ -227,5 +234,22 @@ main header h1 {
     nav svg {
         display: block;
         margin-right: 1rem;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    figure img, figure figcaption {
+        display: none;
+    }
+
+    main header h1 {
+        transform: none;
+        position: static;
+        font-size: 2.5rem;
+        text-shadow: none;
+        display: block;
+        height: 5rem;
     }
 }
