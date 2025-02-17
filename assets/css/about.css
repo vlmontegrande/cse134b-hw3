@@ -151,6 +151,23 @@ img {
     object-position: top;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color, brown);
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+main a:hover {
+    transform: scale(1.1);
+}
+
 main header {
     background-color: var(--background-color);
 }
@@ -163,6 +180,35 @@ main header h1 {
     text-shadow: 2px 2px 4px black; 
     text-align: center;
     font-size: 5rem;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content-section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 15rem;
+    height: 15rem;
+    padding: 2rem; 
+    box-sizing: border-box; 
+    background-color: var(--primary-container, yellow);
+    border-radius: 2rem;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+}
+
+.content-section p {
+    font-size: 1rem; 
 }
 
 /* Tablet/Restrictive Laptop Breakpoint */
