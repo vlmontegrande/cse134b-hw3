@@ -112,13 +112,18 @@ footer > :last-child {
 footer a {
     font-size: (--big-link-size, 1.5rem);
     text-decoration: none;
-    color: var(--text-color, black);
+    color: var(--nav-link-color, brown);
     font-weight: bold;
+    transition: transform 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.1);
 }
 
 footer small {
     font-size: var(--small-link-size, 1rem);
-    color: var(--text-color, black);
+    color: var(--nav-link-color, brown);
 }
 
 /* Page styles */
